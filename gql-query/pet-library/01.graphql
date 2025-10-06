@@ -1,0 +1,11 @@
+# vraag de naam en de gebruikersnaam van alle gebruikers op
+# maakt de volgorde van de opgevraagde elementen uit?
+
+
+query allCustomers {
+  totalCustomers
+  allCustomers {
+    name
+    username
+  }
+}
