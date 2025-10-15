@@ -1,0 +1,20 @@
+query PetById {
+  pet1: petById(id: "S-4") {
+    name
+    category
+    photo {
+      thumb
+    }
+    status
+    weight
+  }
+  pet2: petById(id: "D-4") {
+    name
+    category
+    photo {
+      thumb
+    }
+    status
+    weight
+  }
+}

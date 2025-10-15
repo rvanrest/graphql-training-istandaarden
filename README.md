@@ -28,4 +28,3 @@ Controleer of je de volgende extensies hebt geinstalleerd of installeer deze:
 # Resources
 https://pet-library.moonhighway.com/
 
-Vecozo-autorisatieregels sessie: auto:1:29 OV:2:55

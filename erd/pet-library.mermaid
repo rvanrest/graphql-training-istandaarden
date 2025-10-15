@@ -1,0 +1,38 @@
+---
+config:
+  look: neo
+  theme: neutral
+  layout: elk
+---
+erDiagram
+	direction LR
+	Pet {
+		ID id PK ""  
+		String name  ""  
+		Float weight  ""  
+		Enum category  ""  
+		Enum status  ""  
+		Date dueDate  ""  
+	}
+	Customer {
+		ID username PK ""  
+		String name  ""  
+		Date dateCreated  ""  
+	}
+	Checkout {
+		ID petId FK ""  
+		ID customerId FK ""  
+		Date checkOutDate  ""  
+		Date checkInDate  ""  
+		Boolean late  ""  
+	}
+	Photo {
+		ID id PK ""  
+		String photo_full  ""  
+		String photo_thumb  ""  
+	}
+	Pet||--||Customer:"inCareOf"
+	Customer||--o{Pet:"currentPets"
+	Customer||--o{Checkout:"checkoutHistory"
+	Pet||--o{Checkout:"checkoutRecords"
+	Pet||--o|Photo:"hasPhotos"

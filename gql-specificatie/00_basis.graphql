@@ -1,0 +1,34 @@
+"""
+Types: 4
+Edges: 5
+Enums: 2
+Custom scalar: Date
+"""
+
+type Customer {
+
+
+}
+
+type Pet {
+
+}
+
+type Photo {
+
+}
+
+type Checkedout {
+
+}
+
+enum PetCategory {
+  CAT
+  DOG
+  RABBIT
+  STINGRAY
+}
+enum PetStatus {
+  AVAILABLE
+  CHECKEDOUT
+} 

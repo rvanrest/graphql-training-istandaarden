@@ -1,0 +1,11 @@
+query PetById {
+  petById(id: "S-4") {
+    name
+    category
+    photo {
+      full
+    }   
+    status
+    weight
+  }
+}
