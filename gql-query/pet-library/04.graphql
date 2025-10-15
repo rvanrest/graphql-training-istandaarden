@@ -1,0 +1,16 @@
+# Wat is de naam, de status, de categorie en het gewicht van de dieren met het ID=“C-4” en “D-4”?
+
+query PetById {
+  petC4: petById(id: "C-4") {
+    name
+    category
+    status
+    weight
+  }
+  petD4: petById(id: "D-4") {
+    name
+    category
+    status
+    weight
+  }
+}

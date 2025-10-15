@@ -1,11 +1,14 @@
-query PetById {
-  petById(id: "S-4") {
+# Vraag van elk dier de naam, categorie, de naam van de klant wie het dier heeft en de retourdag op.
+
+query allPets {
+  allPets {
     name
     category
-    photo {
-      full
-    }   
-    status
+    inCareOf {
+      name
+    }
     weight
+    dueDate
+    status
   }
 }
